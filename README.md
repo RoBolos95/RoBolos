@@ -1,6 +1,6 @@
 # RoBolos
 <div>
-  <p color="#44c968">RoBolos é uma empresa de confeitaria fundada pela Rosângela em1995. O presente repositório tem como objetivo automatizar o negócio da cliente através da criação de websites de divulgação e administração.</p>
+  <p color="#44c968">RoBolos é uma empresa de confeitaria fundada pela Rosângela em 1995. O presente repositório tem como objetivo automatizar o negócio da cliente através da criação de websites de divulgação e administração.</p>
 </div>
 
 
