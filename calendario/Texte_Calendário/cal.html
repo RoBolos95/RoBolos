@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela com Modal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>Tela com Modal</h1>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Abrir Modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Adicionar Pedido</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form id="pedidoForm">
+                        <div class="form-group">
+                            <label for="cliente">Cliente:</label>
+                            <input type="text" class="form-control" id="cliente" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pedido">N do Pedido:</label>
+                            <input type="text" class="form-control" id="pedido" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="produto">Nome do Produto:</label>
+                            <input type="text" class="form-control" id="produto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="preco">Preço:</label>
+                            <input type="text" class="form-control" id="preco" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantidade">Quantidade:</label>
+                            <input type="text" class="form-control" id="quantidade" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" id="adicionarPedido">Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const adicionarPedidoButton = document.querySelector("#adicionarPedido");
+        const pedidoForm = document.querySelector("#pedidoForm");
+
+        adicionarPedidoButton.addEventListener("click", function () {
+            // Obter os valores dos campos
+            const cliente = document.querySelector("#cliente").value;
+            const pedido = document.querySelector("#pedido").value;
+            const produto = document.querySelector("#produto").value;
+            const preco = document.querySelector("#preco").value;
+            const quantidade = document.querySelector("#quantidade").value;
+
+            // Aqui você pode adicionar lógica para fazer algo com os valores
+            console.log("Cliente:", cliente);
+            console.log("N do Pedido:", pedido);
+            console.log("Nome do Produto:", produto);
+            console.log("Preço:", preco);
+            console.log("Quantidade:", quantidade);
+
+            // Fechar o modal
+            $('#myModal').modal('hide');
+        });
+    });
+</script>
+
+</body>
+</html>
