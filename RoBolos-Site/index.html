@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- /----------------------------/
+        /                            /
+        /        META TAGS           /
+        /                            /
+        /----------------------------/ -->
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- /----------------------------/
+            /                            /
+            /        CSS LINKS           /
+            /                            /
+            /----------------------------/ -->
+            <link rel="stylesheet" href="main/style/design/componentesRoot.css">
+            <link rel="stylesheet" href="main/style/design/reset.css">
+            <link rel="stylesheet" href="main/style/css/indexPageCss/indexPageCss.css">
+    
+        <!-- /----------------------------/
+            /                            /
+            /        ANOTHERS LINKS      /
+            /                            /
+            /----------------------------/ -->
+        
+            <link rel="shortcut icon" href="../../assets/icon/iconMiathLogo.ico" type="image/x-icon">
+    
+        <title>Home Page</title>
+</head>
+
+<body>
+        
+      
+    <!-- /----------------------------/
+        /                            /
+        /       MAIN CONTAINER       /
+        /                            /
+        /----------------------------/ -->    
+        <div class="mainContainer flexContainer flexColumn">
+            <header id="topContent">
+                <div class="navBar flexContainer flexRow alignAllCenter">
+                    <nav>
+                        <a href="#topContent" class="link-root linksNavBar"><span class="textNavBar text-white">Home</span></a>
+                        <a href="#sobreNosContent" class="link-root linksNavBar"><span class="textNavBar text-white">Sobre nós</span></a>
+                        <a href="#produtoContent" class="link-root linksNavBar"><span class="textNavBar text-white">Produto</span></a>
+                        <a href="#avaliarProd" class="link-root linksNavBar"><span class="textNavBar text-white">Avaliação</span></a>
+                        <a href=" #footer" class="link-root linksNavBar"><span class="textNavBar text-white">Localização</span></a>
+                    </nav>
+                </div>
+            </header>
+         
+   
+    <!-- /----------------------------/
+        /                            /
+        /     Top Content page       /
+        /                            /
+        /----------------------------/ -->
+        <div class="topContent flexContainer flexRow alignAllCenter" >
+            <div class="sectionTopLeft flexContainer flexColumn">
+                <img src="main/assets/img/imgLogoRo.png" class="imgLogoTopContent">
+                <p class="text-wine textTopContent">Há mais de 20 anos presente em seus momentos mais felizes</p>
+            </div>
+            <img src="main/assets/img/imgElement4.png" class="ElementRoTopContent">
+        </div>
+
+    <!-- /----------------------------/
+        /                            /
+        /     Mid Content page       /
+        /                            /
+        /----------------------------/ -->
+        <div class="midContent flexContainer flexColumn alignAllCenter" id="sobreNosContent">
+            <div class="SobreNosContent flexContainer flexRow alignAllCenter" >
+                <div class="sobreNosSectionLeft flexContainer flexColumn alignAllCenter">
+                    <h1 class="title-root titleSobreNos">Sobre Nós</h1>
+                    <p class="text-wine textSobreNosContent">
+                        Rosangela Santos é uma empreendedora no segmento da confeitaria e proprietária da confeitaria "Rô Bolos". Sua trajetória teve início há duas décadas, durante a comemoração do aniversário de seu filho, quando demonstrou seu talento ao confeccionar um bolo que encantou os presentes. A partir desse momento, Rosângela passou a receber encomendas, 
+                        o que culminou na criação de seu empreendimento de sucesso. Atualmente, opera em colaboração com sua filha.</p>
+                </div>
+                <div class="sobreNosSectionRigth">
+                    <img src="main/assets/img/imgRo.jpeg" class="imgSobreNosContent">
+                </div>
+            </div>
+
+            <div class="ProdutosContent flexContainer flexColumn alignAllCenter" id="produtoContent">
+                <h1 class="title-root titleProdutos">Produtos</h1>
+                <div class="lineProdutos1 flexContainer flexRow">
+
+                    <div class="CardProduto flexContainer flexColumn alignAllCenter">
+                        <img src="main/assets/img/imgProdutoRo1.jpeg" class="imgCardProduto">
+                        <p class="text-wine textCardProduto">Bolo de pote</p>
+                    </div>
+
+                    <div class="CardProduto flexContainer flexColumn alignAllCenter">
+                        <img src="main/assets/img/imgProdutoRo2.jpg" class="imgCardProduto">
+                        <p class="text-wine textCardProduto">Personalizados</p>
+                    </div>
+
+                    <div class="CardProduto flexContainer flexColumn alignAllCenter">
+                        <img src="main/assets/img/imgProdutoRo3.jpg" class="imgCardProduto">
+                        <p class="text-wine textCardProduto">Caseiros</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="avaliarProdutoContent flexContainer flexColumn alignAllCenter" id="avaliarProd">
+                <div class="avaliarContent alignAllCenter flexContainer flexColumn">
+                    <h1 class="title-root tituloAvaliar">Avalição</h1>
+                    <div class="cardTextCliente flexContainer flexColumn">
+                        <div class="starsCard flexContainer flexRow">
+                            <label for="radio1star"> <img src="main/assets/img/star1.png" id="s1"></label>
+                            <label for="radio2star"> <img src="main/assets/img/star0.png" id="s2"></label>
+                            <label for="radio3star"> <img src="main/assets/img/star0.png" id="s3"></label>
+                            <label for="radio4star"> <img src="main/assets/img/star0.png" id="s4"></label>
+                            <label for="radio5star"> <img src="main/assets/img/star0.png" id="s5"></label>   
+                            <input type="radio" id="radio1star" name="radio" onclick="star1()" checked>
+                            <input type="radio" id="radio2star" name="radio" onclick="star2()">
+                            <input type="radio" id="radio3star" name="radio" onclick="star3()">
+                            <input type="radio" id="radio4star" name="radio" onclick="star4()">
+                            <input type="radio" id="radio5star" name="radio" onclick="star5()">
+                        </div>
+                        <div id="avaliacao" class="avaliacao flexContainer flexColumn alignAllCenter">
+
+                            <form action="" id="avaliacao-form">
+                                <input type="text" class="inputAvaliar" placeholder="Digite Seu Nome" maxlength="20" name="clientName" id="clientName" required>
+                                <textarea class="inputAvaliar" name="comentario" id="comentario" cols="30" rows="10" placeholder="Digite Seu comentario" required></textarea>
+                                <button class="button-root buttonAvaliar " type="button" onclick="mostrarComentario()">Enviar</button>
+                            </form>
+                        </div> 
+                    </div>
+                    <div id="avaliacoes" class="localAvaliar flexContainer alignAllCenter flexRow">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <!-- /----------------------------/
+        /                            /
+        /     Low Content page       /
+        /                            /
+        /----------------------------/ -->
+
+        <div class="lowContentPage flexContainer">
+            <footer class="flexContainer flexColumn " id="footer">
+                
+                <div class="sectionFooter flexContainer flexColumn ">
+                    <div class="meiosContato flexContainer flexRow alignAllCenter">
+                        <div class="ContatoRedes flexContainer flexColumn">
+                            <img src="main/assets/icons/iconInstagram.png" class="imgContatos">
+                            <p class="text-white textRedes">@RoBolos.oficial</p>
+                        </div>
+                        <div class="ContatoRedes flexContainer flexColumn ">
+                            <img src="main/assets/icons/iconWhatssap.png" class="imgContatos">
+                            <p class="text-white textRedes">11 4002-8922</p>
+                        </div>
+                        <div class="ContatoRedes flexContainer flexColumn ">
+                            <img src="main/assets/icons/iconFacebook.png" class="imgContatos">
+                            <p class="text-white textRedes">RoBolos.Oficial</p>
+                        </div>
+                    </div>
+                   
+                    <div class="LocalInformacao flexContainer flexColumn alignAllCenter">
+                        <div class="flexContainer flexRow alignAllCenter">
+                            <p class="text-whiteCursive">Endereço:</p>
+                            <img src="main/assets/icons/iconCake.png" class="iconEndereco">
+                        </div>
+                        <p class="text-white ConatatoEndereco">Jardim Nakamura <br> Rua Agamenon Pereira da Silva - 437</p>
+                    </div>
+
+
+                </div>
+
+            </footer>
+        </div>
+
+
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main/controller/js/roBolos.js"></script>
+   
+        
+
+</body>
+</html>

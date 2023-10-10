@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&family=Montserrat:wght@100&family=Poppins:wght@200;300;400&display=swap');
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    background-color: #d0b4a2;
+}
+.mainContainer{
+    background-color: #d0b4a2;
+    font-family:'DM Sans', sans-serif ;
+}
+::-webkit-scrollbar {
+    width:1.5vh;
+    height: 1vh;
+
+}
+::-webkit-scrollbar-track {
+    background: #d0b4a2;
+}
+::-webkit-scrollbar-thumb {
+    background: #703031;
+    border-radius: 0.5vh;
+}
+/* /-------------------------/
+    /                        /                        
+    /      ALIGN THINGS      /
+    /                        /
+    /------------------------/ */
+
+    /* section where the alignment block of our design system is located*/
+
+    .flexContainer{
+        display: flex;
+    }
+
+    .flexColumn{
+        flex-direction: column;
+    }
+
+    .flexRow{
+        flex-direction: row;
+    }
+
+    .alignAllCenter{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .alignAllEnd{
+        align-items:end;
+        justify-content: end;
+    }
+
+    .alignAllStat{
+        align-items:start;
+        justify-content: start;
+    }
+
+    .justifySpaceBetween{
+        justify-content: space-between;
+    }
+
+    .justifySpaceAround{
+        justify-content: space-around;
+    }
+
+    .justifySpaceEvenly{
+        justify-content: space-evenly;
+    }
+
+    .allScream{
+        width: 100vw;
+        height: 100vh;
+    }
+ /*  /----------------------------/
+        /            TEXTS           /
+        /----------------------------/ */
+
+        .text-wine{
+            color: #721214;
+            font-family: 'DM Sans', sans-serif;
+        }
+        .text-white{
+            color: #ffefde;
+            font-family: 'DM Sans', sans-serif;
+        }
+        .text-whiteCursive{
+            color: #e6d6d6;
+            font-family: 'Alex Brush', cursive;
+            font-size: 4vh;
+        }
+        /*  /----------------------------/
+            /            TITLES          /
+            /----------------------------/ */
+    
+        .title-root{
+            color: #721214;
+            font-family: 'Alex Brush', cursive;
+            font-size: 7vw;
+        }
+    
+      
+
+        /*  /----------------------------/
+            /            buttons          /
+            /----------------------------/ */
+            .button-root{
+                background-color: #721214;
+                border-radius: 2vh;
+                padding: 0.5rem;
+                font-family: 'DM Sans', sans-serif;
+                border: none;
+                color: white;
+                cursor: pointer;
+                width: 5vw;
+
+            }
+            .button-root:hover{
+                letter-spacing: 0.5px;
+                background: transparent;
+                transition: 0.5s;
+                color: #721214;
+                border: 0.22vh solid #721214;
+                font-weight: 600;
+            }
+        
+ /* /-------------------------/
+    /                        /                        
+    /         LINKS          /
+    /                        /
+    /------------------------/ */
+
+    /* section where the link block of our design system is located*/
+    .link-root{
+        text-decoration: none;
+    }

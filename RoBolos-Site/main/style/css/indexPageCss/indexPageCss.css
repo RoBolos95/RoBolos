@@ -1,0 +1,315 @@
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 12vh;
+}
+footer{
+    width: 100%;
+    height: 25vh !important;
+    position: absolute;
+    margin-top: 15vw;
+    background-color: #703031;
+}
+/* /-------------------------/
+    /                        /                        
+    /    CONTAINER/DIV       /
+    /                        /
+    /------------------------/ */
+.navBar{
+    width: 100%;
+    height: 12vh;
+    background-color: #703031;
+    position: fixed;
+    z-index: 2;
+}
+/* .footerRoBolos{
+    z-index: 2;
+    background-color: #721214 !important;
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+} */
+.topContent{
+    width: 100%;
+}
+.midContent{
+    width: 100%;
+    margin-top: 8vw;
+}
+.sectionTopLeft{
+    width: 48%;
+    margin-left: 8vw;
+}
+.SobreNosContent{
+    height: 88vh;
+    margin-top: 5vw;
+    visibility: hidden;
+    
+}
+.avaliarProdutoContent{
+    height: auto;
+
+}
+.avaliarContent{
+    height: auto;
+    margin-top: 10vw;
+}
+.sobreNosSectionLeft{
+    width: 60%;
+}
+.sobreNosSectionRigth{
+    width: 40%;
+    height: 100%;
+    border-radius: 50%;
+   
+}
+.ProdutosContent{
+    width: 100%;
+    height: 155vh;
+    margin-top: 5vw;
+    visibility: hidden;
+}
+.CardProduto{
+    width: 45vh;
+    height: 50vh;
+    background-color: transparent;
+    margin-right: 1vh;
+}
+.lineProdutos2 {
+    margin-top: 5vw;
+}
+.cardAvaliar{
+    width: 22vw;
+    height: 10vw;
+    margin-right: 2vh;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    border-radius:5%;
+    background-color: #cbaeaf;
+    box-shadow: 1.0vh 1.0vh 1.0vh #9a5d6163;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.localAvaliar{
+    margin-top: 5vw;
+    max-width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+   
+}
+
+.cardTextCliente{
+    width: 25vw;
+    height: 15vw;
+    border-radius:5%;
+    background-color: #cbaeaf;
+    box-shadow: 1.0vh 1.0vh 1.0vh #9a5d6163;
+    align-items: center;
+}
+.comentarioCardAvaliar{
+    margin-top: 2vh;
+}
+.starsCard{
+    margin-top: 2vw;
+}
+.ContatoRedes{
+    align-items: center;
+}
+.sectionFooter{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.LocalInformacao{
+    margin-top: -6vw;
+    width: 30%;
+    margin-left: 70%;
+    
+}
+.ContatoRedes {
+    padding: 2vw;
+}
+/* /-------------------------/
+    /                        /                        
+    /          IMG           /
+    /                        /
+    /------------------------/ */
+.ElementRoTopContent{
+    width: 40vw;
+    margin-top: 2vw;
+}
+.imgLogoTopContent{
+    width: 25vw;
+    margin-left: -4vw;
+}
+.imgSobreNosContent{
+    width: 100%;
+    height: 99%;
+    -webkit-mask-image: linear-gradient(to top, transparent 0.2%, #e6d6d6 30%);
+    border-radius: 1vh;
+    z-index: 0;
+}
+.imgCardProduto{
+    width: 37vh;
+    height: 37vh;
+    border-radius: 100%;
+    border: 1.5vh solid #7212148d;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.imgCardProduto:hover{
+    opacity: 0.9;
+    width: 38vh;
+    height: 38vh;
+    transition: 0.3s;
+   
+}
+.imgContatos{
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-right: 2vh;
+    margin-bottom: 0.5vw;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.imgContatos:hover{
+    margin-top: -1.2vh;
+    transition: 0.3s;
+    opacity: 0.8;
+}
+.imgContatos:hover ~ .textRedes{
+    visibility: visible;
+    transition: 0.3s;
+}
+.iconEndereco{
+    width: 2vw;
+    margin-left: 1vh;
+}
+/* /-------------------------/
+    /                        /                        
+    /          TEXT          /
+    /                        /
+    /------------------------/ */
+
+    .textNavBar{
+        font-size: 3vh;
+        font-weight: 600;
+    }
+    .textTopContent{
+        font-size: 4vh;
+        word-spacing: 6px;
+        width: 32vw;
+        font-weight: 300;
+        line-height: 5vh;
+    }
+    .titleSobreNos{
+        margin-bottom: 2vw;
+        margin-left: -15vw;
+    }
+
+    .textSobreNosContent{
+        width: 70%;
+        text-align: justify;
+        font-size: 3vh;
+        font-weight: 400;
+        word-spacing: 10px;
+        line-height: 5vh;
+    }
+    .textCardProduto{
+        font-weight: 300;
+        font-size: 4vh;
+        margin-top: 2vw;
+    }
+    .titleProdutos{
+        margin-bottom: 2vw;
+    }
+    #rating{
+        visibility: hidden;
+    }
+    .tituloAvaliar{
+        margin-bottom: 8vw;
+    }
+    .nameClientCardAvaliar{
+        font-weight: bold;
+        max-width: 10vw !important;
+        margin-right: 2vh;
+    }
+    .comentarioCardAvaliar{
+        max-width: 15vw !important;
+        height: auto;
+        
+    }
+    .ConatatoEndereco{
+        width: 20vw;
+        font-size: 2.5vh;
+        text-align: center;
+    }
+    .textRedes{
+        visibility: hidden;
+        font-size: 1.8vh;
+        margin-left: -1vh;
+      
+    }
+/* /-------------------------/
+    /                        /                        
+    /         INPUTS         /
+    /                        /
+    /------------------------/ */
+    .inputAvaliar{
+        align-items: left;
+        width:70%;
+        margin-left: 2vw;
+        font-size: 1.8vh;
+        margin-top: 2.4vh;
+        border: none;
+        color:#721214;
+        border-bottom: 0.1vh solid #292929;
+        background: none;
+        font-weight: 300;
+        outline: none;
+    }
+    .inputAvaliar::placeholder{
+        color: #7212147f;
+    }
+    #comentario{
+        resize: none;
+        height: 2.5vh;
+       
+    }
+    .avaliarContent input[type='radio']{
+        display: none;
+    }
+/* /-------------------------/
+    /                        /                        
+    /         BTNS           /
+    /                        /
+    /------------------------/ */
+    .buttonAvaliar{
+        margin-top: 3vw;
+        margin-left: 18vw;
+    }
+   
+/* /-------------------------/
+    /                        /                        
+    /         LINK           /
+    /                        /
+    /------------------------/ */
+.linksNavBar{
+    padding-right:6.5vw;
+}
+.linksNavBar:hover .textNavBar{
+    letter-spacing: 0.5px;
+    color: #dfb9b9;
+    transition: 0.3s;
+}
+    
+
+/* /-------------------------/
+    /                        /                        
+    /      ELEMENTS          /
+    /                        /
+    /------------------------/ */
+    
