@@ -590,6 +590,9 @@ background-color: transparent;
 }
 .calendario #myModal {
   background-color: aqua;
+  width: 50vw;
+  height: 30vw;
+  margin-right: 6vw;
 }
 /* seguranca */
 .config-seguranca {
